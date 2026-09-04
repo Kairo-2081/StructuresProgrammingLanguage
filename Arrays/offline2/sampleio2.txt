@@ -1,0 +1,63 @@
+Commands:
+  set     - Set array size, seed, and distribution (uniform or gaussian)
+  min     - Print minimum value
+  max     - Print maximum value
+  mean    - Print mean value
+  stddev  - Print standard deviation
+  hist    - Plot histogram
+  summary - Print min, max, mean, stddev
+  help    - Show this help message
+  exit    - Exit the program
+
+Enter command: summary
+Array not initialized. Use 'set' command first.
+
+Enter command: help
+Commands:
+  set     - Set array size, seed, and distribution (uniform or gaussian)
+  min     - Print minimum value
+  max     - Print maximum value
+  mean    - Print mean value
+  stddev  - Print standard deviation
+  hist    - Plot histogram
+  summary - Print min, max, mean, stddev
+  help    - Show this help message
+  exit    - Exit the program
+
+Enter command: set
+Enter number of elements (<= 100000): 12345
+Enter seed: 52
+Distribution? (uniform/gaussian): uniform
+Enter min and max: -20 20
+Array initialized with uniform distribution.
+
+Enter command: summary
+Min       :   -19.9968
+Max       :    19.9999
+Mean      :    -0.0199
+Std Dev   :    11.4781
+
+Enter command: hist
+Enter number of bins: 20
+[-20.00 - -18.00]: ***********************************************
+[-18.00 - -16.00]: *********************************************
+[-16.00 - -14.00]: *******************************************
+[-14.00 - -12.00]: **********************************************
+[-12.00 - -10.00]: *********************************************
+[-10.00 -  -8.00]: ************************************************
+[ -8.00 -  -6.00]: ************************************************
+[ -6.00 -  -4.00]: **********************************************
+[ -4.00 -  -2.00]: ********************************************
+[ -2.00 -   0.00]: **********************************************
+[  0.00 -   2.00]: *********************************************
+[  2.00 -   4.00]: *********************************************
+[  4.00 -   6.00]: **********************************************
+[  6.00 -   8.00]: **********************************************
+[  8.00 -  10.00]: **************************************************
+[ 10.00 -  12.00]: ************************************************
+[ 12.00 -  14.00]: **********************************************
+[ 14.00 -  16.00]: **********************************************
+[ 16.00 -  18.00]: *******************************************
+[ 18.00 -  20.00]: *******************************************
+
+Enter command: exit
