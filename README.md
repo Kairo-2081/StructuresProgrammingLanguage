@@ -138,3 +138,15 @@ gcc Pointers/2405010-2.c -o sort_words
 ```
 
 `-lm` links the math library, which the arrays and strings programs need for `sqrt` and `log`.
+
+## Repository layout
+
+```text
+.
+├── Loops/       CSE102_Offline1.pdf and "offline 01/" (source, plus a committed .exe and .o)
+├── Arrays/      offline2/ (assignment PDF, starter utils.c, sample sessions) and 2405010/ (solution)
+├── Strings/     assignment PDF and 2405010.c
+└── Pointers/    assignment PDF, 2405010-1.c and 2405010-2.c
+```
+
+Folders named `2405010` are my solutions (my student ID). `Arrays/__MACOSX/` holds macOS metadata that came with the downloaded zip.
