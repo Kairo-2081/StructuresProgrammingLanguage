@@ -39,3 +39,19 @@ Row 2: INACTIVE - Energy level 0
 Row 3: MEDIUM - Energy level 6
 Total Energy: 14
 ```
+
+## Arrays
+
+`Arrays/2405010/offline 2.c` is an interactive statistics tool. It fills an array of up to 100,000 doubles with random values from a seed, then answers commands. The random generators (`populate_array_uniform`, `populate_array_gaussian`) come from the supplied `utils.c`.
+
+| Command | Action |
+| --- | --- |
+| `set` | Ask for the size, the seed and the distribution (`uniform` or `gaussian`), then fill the array |
+| `min`, `max`, `mean`, `stddev`, `median` | Print one statistic |
+| `summary` | Print min, max, mean and standard deviation |
+| `hist` | Ask for a bin count and draw a histogram of `*` characters, scaled to at most 50 stars per bin |
+| `help`, `exit` | Show the command list, or quit |
+
+Every command except `set`, `help` and `exit` first checks that the array has been initialised. The median sorts the data with `qsort`.
+
+The assignment folder `Arrays/offline2/` has the starter `utils.c` and two sample sessions (`sampleio1.txt`, `sampleio2.txt`) to compare against. The numbers differ from the samples, because they depend on the random generator and the platform.
