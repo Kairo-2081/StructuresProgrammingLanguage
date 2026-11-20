@@ -2,6 +2,17 @@
 
 C programs from my first-year Structured Programming course at BUET. Each folder is one offline assignment, from loops and conditionals up to pointers with dynamic memory, and holds the assignment PDF next to the solution.
 
+## Contents
+
+- [Assignments](#assignments)
+- [Loops and conditionals](#loops-and-conditionals)
+- [Arrays](#arrays)
+- [Strings](#strings)
+- [Pointers](#pointers)
+- [Build and run](#build-and-run)
+- [Repository layout](#repository-layout)
+- [Notes](#notes)
+
 ## Assignments
 
 | Topic | Folder | Program | What it does |
