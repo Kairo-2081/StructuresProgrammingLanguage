@@ -55,3 +55,26 @@ Total Energy: 14
 Every command except `set`, `help` and `exit` first checks that the array has been initialised. The median sorts the data with `qsort`.
 
 The assignment folder `Arrays/offline2/` has the starter `utils.c` and two sample sessions (`sampleio1.txt`, `sampleio2.txt`) to compare against. The numbers differ from the samples, because they depend on the random generator and the platform.
+
+## Strings
+
+`Strings/2405010.c` is a small natural language processing pipeline over up to 50 documents of up to 5,000 characters each. It uses `<string.h>` and `<ctype.h>` and no pointers, as the assignment requires.
+
+| Command | Action |
+| --- | --- |
+| `set` | Read the number of documents and their text |
+| `preprocess` | Run all four steps below in order, printing the result of each |
+| `tf` | Term frequency of a word in each document |
+| `idf` | Inverse document frequency of a word across all documents |
+| `tfidf` | TF-IDF of a word in each document |
+| `stat` | Print TF, IDF and TF-IDF for every remaining token as matrices |
+| `help`, `exit` | Show the command list, or quit |
+
+`preprocess` does four things:
+
+1. **Normalise**: convert every document to lowercase.
+2. **Tokenise**: split the text into alphanumeric words.
+3. **Remove stop words**: drop `the`, `is`, `a`, `an`, `and`, `in`, `of` and `to`.
+4. **Stem**: strip a trailing `ing`, `ed` or `s`.
+
+Run `set` and `preprocess` before `tf`, `idf`, `tfidf` or `stat`, since they work on the processed tokens.
