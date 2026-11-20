@@ -78,3 +78,38 @@ The assignment folder `Arrays/offline2/` has the starter `utils.c` and two sampl
 4. **Stem**: strip a trailing `ing`, `ed` or `s`.
 
 Run `set` and `preprocess` before `tf`, `idf`, `tfidf` or `stat`, since they work on the processed tokens.
+
+## Pointers
+
+Both programs avoid array indexing and use pointer arithmetic such as `*(p + i)`, as the assignment requires.
+
+### Remove negatives (`Pointers/2405010-1.c`)
+
+Reads `N` integers into a `malloc`ed array. `removeNegatives(int *input, int n, int **output, int *newSize)` allocates a second array that holds only the non-negative values and reports its size through `newSize`. Both arrays are freed at the end.
+
+```text
+6
+3 -1 0 -7 8 2
+```
+
+```text
+4
+3 0 8 2
+```
+
+### Sort words (`Pointers/2405010-2.c`)
+
+Reads `n` words into a `char **` list, each word allocated separately, and sorts them lexicographically with bubble sort and a pointer-swapping `swap`. Each word is typed with a trailing `.` as its terminator, and the compare function stops at that dot.
+
+```text
+3
+banana.
+apple.
+cherry.
+```
+
+```text
+apple.
+banana.
+cherry.
+```
