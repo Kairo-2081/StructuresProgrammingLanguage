@@ -10,3 +10,32 @@ C programs from my first-year Structured Programming course at BUET. Each folder
 | Arrays | `Arrays/` | `2405010/offline 2.c` | Command-driven statistics and histogram tool for a generated array |
 | Strings | `Strings/` | `2405010.c` | Command-driven text pipeline that computes TF, IDF and TF-IDF |
 | Pointers | `Pointers/` | `2405010-1.c`, `2405010-2.c` | Filter negatives and sort words, both with pointer arithmetic only |
+
+## Loops and conditionals
+
+`Loops/offline 01/offline 01.c` models an "energy machine" with `n` rows of numbers. For each row it checks four rules on the row's values:
+
+| Rule | Condition | Energy |
+| --- | --- | --- |
+| Prime-active | the row sum is prime | +5 |
+| Palindrome-active | the row sum reads the same backwards | +3 |
+| Harmonic | the alternating sum (first - second + third ...) is divisible by 7 | +4 |
+| Balanced | the odd-position sum equals the even-position sum | +2 |
+
+A row is `ULTRA` when it meets all four rules, `HIGH` for three, `MEDIUM` for two, `LOW` for one and `INACTIVE` for none. The program ends with the total energy.
+
+Input is `n`, then one line per row that starts with the row length `k` followed by `k` integers. Example:
+
+```text
+3
+3 1 2 4
+4 3 5 3 5
+2 7 7
+```
+
+```text
+Row 1: MEDIUM - Energy level 8
+Row 2: INACTIVE - Energy level 0
+Row 3: MEDIUM - Energy level 6
+Total Energy: 14
+```
