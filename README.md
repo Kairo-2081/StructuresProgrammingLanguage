@@ -150,3 +150,10 @@ gcc Pointers/2405010-2.c -o sort_words
 ```
 
 Folders named `2405010` are my solutions (my student ID). `Arrays/__MACOSX/` holds macOS metadata that came with the downloaded zip.
+
+## Notes
+
+- The `hist` command in the arrays program prints an error for a bin count outside 1 to 1000 but then carries on with that value, so enter a valid count.
+- In `Pointers/2405010-1.c` the index `j` is declared without a value before it is used. It happened to work in my test run, but initialising it to `0` is the safe fix.
+- The loops program prints `Energy level` in lower case, where the assignment text shows `Energy Level`.
+- This repository is coursework kept for reference.
