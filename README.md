@@ -113,3 +113,28 @@ apple.
 banana.
 cherry.
 ```
+
+## Build and run
+
+Everything compiles with gcc. Compile and run each program from its own folder, because the folder names contain spaces and `offline 2.c` includes `utils.c` from the same folder.
+
+```bash
+# Loops
+gcc "Loops/offline 01/offline 01.c" -o loops
+./loops < input.txt
+
+# Arrays
+cd "Arrays/2405010"
+gcc "offline 2.c" -o arrays -lm
+./arrays
+
+# Strings
+gcc Strings/2405010.c -o strings -lm
+./strings
+
+# Pointers
+gcc Pointers/2405010-1.c -o remove_negatives
+gcc Pointers/2405010-2.c -o sort_words
+```
+
+`-lm` links the math library, which the arrays and strings programs need for `sqrt` and `log`.
