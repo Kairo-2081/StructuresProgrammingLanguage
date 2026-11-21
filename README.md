@@ -166,5 +166,5 @@ Folders named `2405010` are my solutions (my student ID). `Arrays/__MACOSX/` hol
 
 - The `hist` command in the arrays program prints an error for a bin count outside 1 to 1000 but then carries on with that value, so enter a valid count.
 - In `Pointers/2405010-1.c` the index `j` is declared without a value before it is used. It happened to work in my test run, but initialising it to `0` is the safe fix.
-- The loops program prints `Energy level` in lower case, where the assignment text shows `Energy Level`.
+- The loops program prints `Energy level` in lower case for every status except `ULTRA`, which prints `Energy Level`.
 - This repository is coursework kept for reference.
